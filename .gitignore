@@ -43,3 +43,11 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+## Getting Started
+
+### Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+python run.py
