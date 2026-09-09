@@ -1,0 +1,49 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(120) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'student',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS classrooms (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(150) NOT NULL,
+    description TEXT,
+    code VARCHAR(20) UNIQUE NOT NULL,
+    teacher_id INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (teacher_id) REFERENCES users(id)
+);
+
+CREATE TABLE IF NOT EXISTS assignments (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title VARCHAR(200) NOT NULL,
+    description TEXT,
+    total_marks INTEGER NOT NULL DEFAULT 100,
+    due_date TIMESTAMP,
+    classroom_id INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (classroom_id) REFERENCES classrooms(id)
+);
+
+CREATE TABLE IF NOT EXISTS submissions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    content TEXT NOT NULL,
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(20) NOT NULL DEFAULT 'submitted',
+    student_id INTEGER NOT NULL,
+    assignment_id INTEGER NOT NULL,
+    FOREIGN KEY (student_id) REFERENCES users(id),
+    FOREIGN KEY (assignment_id) REFERENCES assignments(id)
+);
+
+CREATE TABLE IF NOT EXISTS results (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    marks_obtained FLOAT NOT NULL DEFAULT 0,
+    feedback TEXT,
+    graded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    submission_id INTEGER UNIQUE NOT NULL,
+    FOREIGN KEY (submission_id) REFERENCES submissions(id)
+);
