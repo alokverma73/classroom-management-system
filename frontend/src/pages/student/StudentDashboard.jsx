@@ -68,7 +68,7 @@ function StudentDashboard() {
         <section className="dashboard-hero">
           <div>
             <p className="dashboard-eyebrow">
-              STUDENT PORTAL
+              Student portal
             </p>
 
             <h1>Student Dashboard</h1>
@@ -118,7 +118,7 @@ function StudentDashboard() {
           <div className="section-heading">
             <div>
               <p className="dashboard-eyebrow">
-                QUICK ACCESS
+                Quick access
               </p>
 
               <h2>Continue Learning</h2>
@@ -161,7 +161,7 @@ function StudentDashboard() {
           <div className="section-heading">
             <div>
               <p className="dashboard-eyebrow">
-                OVERVIEW
+                Overview
               </p>
 
               <h2>Your Progress</h2>

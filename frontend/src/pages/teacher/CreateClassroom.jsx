@@ -52,7 +52,7 @@ function CreateClassroom() {
       <main>
         <div className="create-page">
           <div className="page-heading">
-            <span>TEACHING TOOLS</span>
+            <span>Teaching tools</span>
             <h1>Create Classroom</h1>
             <p>
               Set up a classroom and invite students to join.

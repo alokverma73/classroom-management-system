@@ -1,3 +1,4 @@
+from ..extensions import db
 from ..models.user import User
 
 
@@ -15,6 +16,9 @@ def register_user(name, email, password, role="student"):
     )
 
     user.set_password(password)
+
+    db.session.add(user)
+    db.session.commit()
 
     return user, None
 

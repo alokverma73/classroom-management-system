@@ -12,7 +12,7 @@ function ClassroomCard({ classroom }) {
   return (
     <article className="classroom-card">
       <div className="classroom-card-top">
-        <span className="classroom-badge">CLASSROOM</span>
+        <span className="classroom-badge">Classroom</span>
         <span className="classroom-code">
           {classroom.code}
         </span>

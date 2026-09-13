@@ -126,7 +126,7 @@ function Announcements() {
       <main className="dashboard-main">
         <div className="create-page">
           <div className="page-heading">
-            <span>TEACHING TOOLS</span>
+            <span>Teaching tools</span>
             <h1>Announcements</h1>
             <p>
               Share important updates with your
@@ -218,7 +218,7 @@ function Announcements() {
             <div className="section-heading">
               <div>
                 <p className="dashboard-eyebrow">
-                  RECENT UPDATES
+                  Recent updates
                 </p>
                 <h2>Your Announcements</h2>
               </div>
@@ -238,7 +238,7 @@ function Announcements() {
                   >
                     <div className="assignment-card-top">
                       <span className="assignment-badge">
-                        ANNOUNCEMENT
+                        Announcement
                       </span>
 
                       <span>

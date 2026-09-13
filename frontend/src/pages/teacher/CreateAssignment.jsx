@@ -159,7 +159,7 @@ function CreateAssignment() {
       <main className="dashboard-main">
         <div className="create-page">
           <div className="page-heading">
-            <span>TEACHING TOOLS</span>
+            <span>Teaching tools</span>
 
             <h1>Create Assignment</h1>
 
@@ -183,7 +183,7 @@ function CreateAssignment() {
             <div className="section-heading">
               <div>
                 <p className="dashboard-eyebrow">
-                  ASSIGNMENT MANAGEMENT
+                  Assignment management
                 </p>
 
                 <h2>Your Assignments</h2>
@@ -213,7 +213,7 @@ function CreateAssignment() {
                   >
                     <div className="assignment-card-top">
                       <span className="assignment-badge">
-                        ASSIGNMENT
+                        Assignment
                       </span>
 
                       <span className="assignment-marks">

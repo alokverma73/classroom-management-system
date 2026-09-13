@@ -102,7 +102,7 @@ function Classroom() {
           <div className="section-heading">
             <div>
               <p className="dashboard-eyebrow">
-                CLASSROOM UPDATES
+                Classroom updates
               </p>
 
               <h2>Announcements</h2>
@@ -136,7 +136,7 @@ function Classroom() {
                 >
                   <div className="assignment-card-top">
                     <span className="assignment-badge">
-                      ANNOUNCEMENT
+                      Announcement
                     </span>
 
                     <span>
@@ -169,7 +169,7 @@ function Classroom() {
           <div className="section-heading">
             <div>
               <p className="dashboard-eyebrow">
-                CLASSROOM WORK
+                Classroom work
               </p>
 
               <h2>Assignments</h2>

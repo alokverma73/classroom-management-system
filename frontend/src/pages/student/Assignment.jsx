@@ -58,7 +58,7 @@ function Assignment() {
       <main>
         <div className="assignment-page">
           <div className="assignment-header">
-            <span className="assignment-label">ASSIGNMENT</span>
+            <span className="assignment-label">Assignment</span>
 
             <h1>{assignment.title}</h1>
 

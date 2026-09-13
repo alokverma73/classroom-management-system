@@ -1,8 +1,7 @@
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token
 
-from ..extensions import db
-from ..models.user import User
+from ..services.auth_service import register_user, authenticate_user
 
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/api/auth")
@@ -23,27 +22,11 @@ def register():
             "message": "Name, email and password are required."
         }), 400
 
-    if role not in ("student", "teacher"):
-        return jsonify({
-            "success": False,
-            "message": "Invalid role."
-        }), 400
+    user, error = register_user(name, email, password, role)
 
-    if User.query.filter_by(email=email).first():
-        return jsonify({
-            "success": False,
-            "message": "Email already registered."
-        }), 409
-
-    user = User(
-        name=name,
-        email=email,
-        role=role
-    )
-    user.set_password(password)
-
-    db.session.add(user)
-    db.session.commit()
+    if error:
+        status = 409 if "registered" in error else 400
+        return jsonify({"success": False, "message": error}), status
 
     return jsonify({
         "success": True,
@@ -65,9 +48,9 @@ def login():
             "message": "Email and password are required."
         }), 400
 
-    user = User.query.filter_by(email=email).first()
+    user = authenticate_user(email, password)
 
-    if not user or not user.check_password(password):
+    if not user:
         return jsonify({
             "success": False,
             "message": "Invalid email or password."

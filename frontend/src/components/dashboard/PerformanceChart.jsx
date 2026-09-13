@@ -17,7 +17,7 @@ function PerformanceChart({ data = [] }) {
     <section className="performance-chart">
       <div className="chart-header">
         <div>
-          <span>ACTIVITY OVERVIEW</span>
+          <span>Activity overview</span>
           <h2>Performance</h2>
         </div>
       </div>

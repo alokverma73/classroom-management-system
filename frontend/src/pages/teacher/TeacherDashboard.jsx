@@ -47,7 +47,7 @@ function TeacherDashboard() {
       <main>
         <div className="teacher-dashboard">
           <div className="page-heading">
-            <span>TEACHER OVERVIEW</span>
+            <span>Teacher overview</span>
             <h1>Teacher Dashboard</h1>
             <p>
               Manage your classrooms, assignments and student
@@ -63,31 +63,31 @@ function TeacherDashboard() {
 
           <section className="dashboard-stats">
             <article className="dashboard-stat-card">
-              <span>CLASSROOMS</span>
+              <span>Classrooms</span>
               <h2>{stats.classrooms}</h2>
               <p>Active classrooms</p>
             </article>
 
             <article className="dashboard-stat-card">
-              <span>ASSIGNMENTS</span>
+              <span>Assignments</span>
               <h2>{stats.assignments}</h2>
               <p>Total assignments</p>
             </article>
 
             <article className="dashboard-stat-card">
-              <span>SUBMISSIONS</span>
+              <span>Submissions</span>
               <h2>{stats.submissions}</h2>
               <p>Student submissions</p>
             </article>
 
             <article className="dashboard-stat-card">
-              <span>PENDING</span>
+              <span>Pending</span>
               <h2>{stats.pending_submissions}</h2>
               <p>Waiting for grading</p>
             </article>
 
             <article className="dashboard-stat-card">
-              <span>GRADED</span>
+              <span>Graded</span>
               <h2>{stats.graded_submissions}</h2>
               <p>Completed reviews</p>
             </article>

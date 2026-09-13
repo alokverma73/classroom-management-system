@@ -74,7 +74,7 @@ function ManageClassroom() {
       <main>
         <div className="create-page">
           <div className="page-heading">
-            <span>TEACHING TOOLS</span>
+            <span>Teaching tools</span>
             <h1>Manage Classrooms</h1>
             <p>
               Create, manage, and organize your classrooms.

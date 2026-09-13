@@ -2,7 +2,7 @@ function MemberList({ members = [] }) {
   return (
     <section className="member-list">
       <div className="member-list-header">
-        <span>CLASSROOM</span>
+        <span>Classroom</span>
         <h2>Class Members</h2>
       </div>
 

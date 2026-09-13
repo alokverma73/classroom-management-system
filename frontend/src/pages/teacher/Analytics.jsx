@@ -69,7 +69,7 @@ function Analytics() {
         <section className="dashboard-hero">
           <div>
             <p className="dashboard-eyebrow">
-              TEACHER ANALYTICS
+              Teacher analytics
             </p>
 
             <h1>Analytics</h1>

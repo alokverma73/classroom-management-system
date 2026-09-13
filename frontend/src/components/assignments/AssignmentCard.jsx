@@ -13,7 +13,7 @@ function AssignmentCard({ assignment }) {
     <article className="assignment-card">
       <div className="assignment-card-top">
         <span className="assignment-badge">
-          ASSIGNMENT
+          Assignment
         </span>
 
         <span className="assignment-marks">

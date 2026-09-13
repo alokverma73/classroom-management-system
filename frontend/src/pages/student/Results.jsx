@@ -37,7 +37,7 @@ function Results() {
       <main>
         <div className="results-page">
           <div className="page-heading">
-            <span>ACADEMIC PERFORMANCE</span>
+            <span>Academic performance</span>
             <h1>My Results</h1>
             <p>
               Track your assignment submissions, grades and
@@ -60,7 +60,7 @@ function Results() {
                   <div className="result-card-header">
                     <div>
                       <span className="result-label">
-                        ASSIGNMENT
+                        Assignment
                       </span>
                       <h3>
                         Assignment #{submission.assignment_id}

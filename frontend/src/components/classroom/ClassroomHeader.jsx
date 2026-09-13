@@ -3,7 +3,7 @@ function ClassroomHeader({ classroom }) {
     <header className="classroom-header">
       <div className="classroom-header-content">
         <span className="classroom-header-label">
-          CLASSROOM
+          Classroom
         </span>
 
         <h1>{classroom.name}</h1>

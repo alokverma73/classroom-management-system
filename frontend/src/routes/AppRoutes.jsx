@@ -1,5 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
+import ScrollReveal from "../components/common/ScrollReveal";
+
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 
@@ -44,7 +46,9 @@ function ProtectedRoute({ children, role }) {
 
 function AppRoutes() {
   return (
-    <BrowserRouter>
+        <BrowserRouter>
+      <ScrollReveal />
+
       <Routes>
         <Route path="/" element={<Navigate to="/login" replace />} />
 

@@ -3,7 +3,7 @@ function RecentActivity({ activities = [] }) {
     return (
       <section className="recent-activity">
         <div className="activity-header">
-          <span>UPDATES</span>
+          <span>Updates</span>
           <h2>Recent Activity</h2>
         </div>
 
@@ -17,7 +17,7 @@ function RecentActivity({ activities = [] }) {
   return (
     <section className="recent-activity">
       <div className="activity-header">
-        <span>UPDATES</span>
+        <span>Updates</span>
         <h2>Recent Activity</h2>
       </div>
 

@@ -47,7 +47,7 @@ function Analytics() {
       <main>
         <div className="teacher-dashboard">
           <div className="page-heading">
-            <span>TEACHER OVERVIEW</span>
+            <span>Teacher overview</span>
             <h1>Analytics</h1>
             <p>
               Track classroom activity, submissions and student
@@ -63,31 +63,31 @@ function Analytics() {
 
           <section className="dashboard-stats">
             <article className="dashboard-stat-card">
-              <span>CLASSROOMS</span>
+              <span>Classrooms</span>
               <h2>{analytics.total_classrooms}</h2>
               <p>Total classrooms</p>
             </article>
 
             <article className="dashboard-stat-card">
-              <span>ASSIGNMENTS</span>
+              <span>Assignments</span>
               <h2>{analytics.total_assignments}</h2>
               <p>Total assignments</p>
             </article>
 
             <article className="dashboard-stat-card">
-              <span>SUBMISSIONS</span>
+              <span>Submissions</span>
               <h2>{analytics.total_submissions}</h2>
               <p>Total submissions</p>
             </article>
 
             <article className="dashboard-stat-card">
-              <span>GRADED</span>
+              <span>Graded</span>
               <h2>{analytics.graded_submissions}</h2>
               <p>Graded submissions</p>
             </article>
 
             <article className="dashboard-stat-card">
-              <span>AVERAGE SCORE</span>
+              <span>Average score</span>
               <h2>{analytics.average_score}</h2>
               <p>Average marks obtained</p>
             </article>
